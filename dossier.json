@@ -1,0 +1,7 @@
+{
+ "entry_txt": "Our \"five-minute stand-up\" ran so long the standing desk lowered itself in protest.",
+ "chars": 83,
+ "files": {
+  "main.ts": "// Office Joke Open entry: writes one office joke, the same bytes on every run.\nimport { mkdirSync, writeFileSync } from \"node:fs\";\n\nconst JOKE = \"Our \\\"five-minute stand-up\\\" ran so long the standing desk lowered itself in protest.\";\n\nmkdirSync(\"/output\", { recursive: true });\nwriteFileSync(\"/output/entry.txt\", JOKE);\n"
+ }
+}
